@@ -1,0 +1,19 @@
+.gotoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.gotoWrapper button {
+  border-radius: 5px;
+  position: fixed;
+  bottom: 2rem;
+  border: 1px solid gainsboro;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: rgb(0, 140, 255);
+  background-color: rgba(44, 33, 33, 0.445);
+  padding: 10px;
+  right: 50px;
+}

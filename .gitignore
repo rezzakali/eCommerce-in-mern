@@ -4,7 +4,7 @@ v
 # dependencies
 /node_modules
 node_modules/
-.en
+.env
 /.pnp
 .pnp.js
 

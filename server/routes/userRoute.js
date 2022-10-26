@@ -5,7 +5,6 @@ import logOutController from '../controller/logOutController.js';
 // internal imports
 import signInController from '../controller/signInController.js';
 import signUpController from '../controller/signUpController.js';
-import authentication from '../middlewares/auth.js';
 import profileUpload from '../middlewares/profileUpload.js';
 
 // router object
@@ -22,6 +21,6 @@ router.post('/signin', signInController);
 router.get('/logout', logOutController);
 
 // authentication
-router.get('/auth', authentication);
+// router.get('/auth', authentication);
 
 export default router;

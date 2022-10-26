@@ -31,7 +31,7 @@ passport.use(
   new GitHubStrategy(
     {
       clientID: '87ae82e429fa8379fa17',
-      clientSecret: '6f9e222de652e90a22a327df4002c11c23b05ec3',
+      clientSecret: 'ffbbd4f1aa8e7b4b97a9cd7987ce30940be48742',
       callbackURL: 'http://localhost:5000/auth/github/callback',
     },
     function (accessToken, refreshToken, profile, done) {

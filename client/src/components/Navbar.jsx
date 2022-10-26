@@ -43,7 +43,7 @@ const Links = [
 export default function Simple() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const cartCount = useSelector((state) => state.product);
+  const cartCount = useSelector((state) => state.product.cart);
 
   const navigate = useNavigate();
 
@@ -106,7 +106,7 @@ export default function Simple() {
                     color: '#CBD5E0',
                   }}
                 >
-                  {cartCount.length}
+                  {cartCount && cartCount.length}
                 </span>
               </div>
             </Link>

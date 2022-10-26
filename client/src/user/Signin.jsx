@@ -32,6 +32,16 @@ function Signin() {
     email: '',
     password: '',
   });
+
+  // with google
+  const google = () => {
+    window.open('http://localhost:5000/auth/google', '_self');
+  };
+
+  const github = () => {
+    window.open('http://localhost:5000/auth/github', '_self');
+  };
+
   const toast = useToast();
 
   const handleChange = (e) => {
@@ -109,14 +119,6 @@ function Signin() {
 
   const handleSignUp = () => {
     navigate('/signup');
-  };
-  // with google
-  const handleGoogle = () => {
-    window.open('http://localhost:5000/auth/google', '_self');
-  };
-
-  const handleGithub = () => {
-    window.open('http://localhost:5000/auth/github', '_self');
   };
 
   return (
@@ -218,10 +220,10 @@ function Signin() {
             </HStack>
             <Box>
               <ButtonGroup variant="outline" spacing="4" width="full">
-                <Button width="full" onClick={handleGoogle}>
+                <Button width="full" onClick={google}>
                   <GoogleIcon />
                 </Button>
-                <Button width="full" onClick={handleGithub}>
+                <Button width="full" onClick={github}>
                   <GitHubIcon />
                 </Button>
               </ButtonGroup>
